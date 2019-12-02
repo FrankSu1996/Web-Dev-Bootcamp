@@ -1,0 +1,17 @@
+img {
+    width: 30%;
+    /* float to get rid of default browser margin and set own between photos*/
+    float: left;
+    /* 3 x 30% per row = 90%. 6 margins total, so 10 % 6 = 1.66*/
+    margin: 1.66%;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 1.66%;
+    font-size: 23px;
+    font-weight: 800;
+    text-transform: uppercase;
+    border-bottom: 2px solid #F1F1F1;
+    padding-bottom: 20px;
+}
