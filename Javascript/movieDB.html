@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function solution() {
+            movies = [{title: "Borat", watched: true, rating: 5}, 
+                {title: "Frozen", watched: false, rating: 2}, 
+                {title: "Rush Hour 3", watched: true, rating: 4.5}, 
+                {title: "Rush Hour 2", watched: true, rating: 3.8}];
+            for (var i = 0; i < movies.length; i++) {
+                if (movies[i].watched === true) {
+                    console.log("You have watched \"" + movies[i].title + "\" - " + movies[i].rating + " stars");
+                }
+                else {
+                    console.log("You have not watched \"" + movies[i].title + "\" - " + movies[i].rating + " stars");
+                }
+            }
+        }    
+    </script>
+    
+</body>
+</html>
