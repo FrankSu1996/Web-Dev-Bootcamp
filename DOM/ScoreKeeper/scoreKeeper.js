@@ -23,7 +23,21 @@ p1Button.addEventListener("click", function() {
     }
 });
 
-p2Button.addEventListener("click", function() {
+function p2Click(button) {
+    button.addEventListener("click", function() {
+        if (!gameOver) {
+            p2Score++;
+            p2Display.textContent = p2Score;
+            if(p2Score === gameLimit) {
+                p2Display.classList.add("winner");
+                alert("Player 2 Won!!");
+                gameOver = true;
+            }
+        }
+    });
+}
+p2Click(p2Button);
+/*p2Button.addEventListener("click", function() {
     if (!gameOver) {
         p2Score++;
         p2Display.textContent = p2Score;
@@ -33,7 +47,7 @@ p2Button.addEventListener("click", function() {
             gameOver = true;
         }
     }
-});
+});*/
 
 function reset() {
     gameOver = false;
