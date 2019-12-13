@@ -14,7 +14,7 @@ Vehicle.prototype.turnOff = function() {
 }
 
 Vehicle.prototype.honk = function() {
-    if (this.isRunning === true) {
+    if (this.isRunning) {
         return "beep";
     }
 }
