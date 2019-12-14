@@ -7,7 +7,11 @@ app.get("/", function(req, res) {
 
 app.get("/bye", function(req, res) {
     res.send("Goodbye!");
-})
+});
+
+app.get("*", function(req, res) {
+    res.send("You are a star!!");
+});
 
 app.listen(3000, process.env.IP, function() {
     console.log("Server has started!!!");
